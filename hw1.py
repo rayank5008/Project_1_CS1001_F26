@@ -12,9 +12,9 @@ import data
 
 # Part 1: vowel_count
 def vowel_count(text: str) -> int:
-    # TODO: Purpose: Count the vowels in a string
-    # TODO: Input(s): The text is the string being checked
-    # TODO: Output: The number of vowels including uppercase vowels
+    #: Purpose: Count the vowels in a string
+    #: Input(s): The text is the string being checked
+    #: Output: The number of vowels including uppercase vowels
     count = 0
 
     for letter in text:
@@ -25,9 +25,9 @@ def vowel_count(text: str) -> int:
 
 # Part 2: short_lists
 def short_lists(items: list[list[int]]) -> list[list[int]]:
-    # TODO: Purpose: find nested lists containing 2 elements
-    # TODO: Input(s): items is a list of integers
-    # TODO: Output: new list containing matching nested lists
+    #: Purpose: find nested lists containing 2 elements
+    #: Input(s): items is a list of integers
+    #: Output: new list containing matching nested lists
     result = []
 
     for item in items:
@@ -39,9 +39,9 @@ def short_lists(items: list[list[int]]) -> list[list[int]]:
 
 # Part 3: ascending_pairs
 def ascending_pairs(items: list[list[int]]) -> list[list[int]]:
-    # TODO: Purpose: put each pair in ascending order
-    # TODO: Input(s): items is a list of lists of integers
-    # TODO: Output: new list of pairs ordered from small to large
+    #: Purpose: put each pair in ascending order
+    #: Input(s): items is a list of lists of integers
+    #: Output: new list of pairs ordered from small to large
     result = []
     for item in items:
         if len(item) == 2:
@@ -56,9 +56,9 @@ def ascending_pairs(items: list[list[int]]) -> list[list[int]]:
 
 # Part 4: add_prices
 def add_prices(first: data.Price, second: data.Price) -> data.Price:
-    # TODO: Purpose: add 2 prices together
-    # TODO: Input(s): first and second are price objects
-    # TODO: Output: new price object with total dollars and cents
+    #: Purpose: add 2 prices together
+    #: Input(s): first and second are price objects
+    #: Output: new price object with total dollars and cents
     total_cents = first.cents + second.cents
 
     dollars = first.dollars + second.dollars
@@ -70,9 +70,9 @@ def add_prices(first: data.Price, second: data.Price) -> data.Price:
 
 # Part 5: rectangle_area
 def rectangle_area(rectangle: data.Rectangle) -> float:
-    # TODO: Purpose: calculate the area of a rectangle
-    # TODO: Input(s): rectangle is a Rectangle object
-    # TODO: Output: area of the rectangle
+    #: Purpose: calculate the area of a rectangle
+    #: Input(s): rectangle is a Rectangle object
+    #: Output: area of the rectangle
     width = rectangle.bottom_right.x - rectangle.top_left.x
     height = rectangle.top_left.y - rectangle.bottom_right.y
 
@@ -83,9 +83,9 @@ def rectangle_area(rectangle: data.Rectangle) -> float:
 
 # Part 6: books_by_author
 def books_by_author(author: str, books: list[data.Book]) -> list[data.Book]:
-    # TODO: Purpose: find books written by a specific author
-    # TODO: Input(s): author is a name and books is a list of Book objects
-    # TODO: Output: A list of Book objects written by that author
+    #: Purpose: find books written by a specific author
+    #: Input(s): author is a name and books is a list of Book objects
+    #: Output: A list of Book objects written by that author
     result = []
 
     for book in books:
@@ -97,9 +97,9 @@ def books_by_author(author: str, books: list[data.Book]) -> list[data.Book]:
 
 # Part 7: circle_bound
 def circle_bound(rectangle: data.Rectangle) -> data.Circle:
-    # TODO: Purpose: create the smallest circle enclosing a rectangle
-    # TODO: Input(s): rectangle is a Rectangle object
-    # TODO: Output: a new Circle object with center and radius
+    #: Purpose: create the smallest circle enclosing a rectangle
+    #: Input(s): rectangle is a Rectangle object
+    #: Output: a new Circle object with center and radius
     x1 = rectangle.top_left.x
     y1 = rectangle.top_left.y
 
@@ -119,9 +119,9 @@ def circle_bound(rectangle: data.Rectangle) -> data.Circle:
 
 # Part 8: below_pay_average
 def below_pay_average(employees: list[data.Employee]) -> list[str]:
-    # TODO: Purpose: find employees earning less than average pay.
-    # TODO: Input(s): employees is a list of Employee objects.
-    # TODO: Output: list of names of employees below the average.
+    #: Purpose: find employees earning less than average pay.
+    #: Input(s): employees is a list of Employee objects.
+    #: Output: list of names of employees below the average.
     if len(employees) == 0:
         return []
 
